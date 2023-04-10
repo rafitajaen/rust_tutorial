@@ -32,11 +32,15 @@ $ rustup self uninstall
 Cargo is Rust's build system and package manager
 
 ```shell
-$ cargo --version
-```
+$ cargo --version #Get Cargo's version
 
-### How to create Project with Cargo
+$ cargo new <project-name> #Create a new project
+$ cargo new --vcs=git #Create a new project with a different version control system
+$ cargo new --help #Help for a new projects command
 
-```shell
-$ cargo new <project-name>
+$ cargo build #It just compiles and creates executable [./target/debug]
+$ cargo run #It compiles and then, run the resulting executable [./target/debug]
+$ cargo check #It just checks if the code still compiles. Faster than build.
+
+$ cargo build --release #It compiles code with optimizations. Slow. [target/release]
 ```

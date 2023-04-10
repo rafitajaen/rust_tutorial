@@ -8,7 +8,7 @@
 *.pdb
 Cargo.lock
 **/*.rs.bk
-
+**/target/
 
 # User-specific files
 *.rsuser
