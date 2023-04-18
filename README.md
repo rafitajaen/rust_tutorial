@@ -47,6 +47,25 @@ $ cargo build --release #It compiles code with optimizations. Slow. [target/rele
 $ cargo clippy #For warnings
 ```
 
+## Make libraries
+
+The name of the library is the _project name_ in Cargo.toml
+
+```rust
+// lib.rs
+pub fn function() { }
+```
+
+```rust
+// main.rs
+use project_name::function;
+
+fn main() { function(); }
+
+// or without imports
+fn main() { project_name::function(); }
+```
+
 ## Silence Warnings
 
 ```rust
