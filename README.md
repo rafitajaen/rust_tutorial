@@ -43,4 +43,12 @@ $ cargo run #It compiles and then, run the resulting executable [./target/debug]
 $ cargo check #It just checks if the code still compiles. Faster than build.
 
 $ cargo build --release #It compiles code with optimizations. Slow. [target/release]
+
+$ cargo clippy #For warnings
+```
+
+## Silence Warnings
+
+```rust
+#![allow(unused_variables)]
 ```
